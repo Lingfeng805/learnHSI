@@ -27,7 +27,8 @@ def pca_dr (img):
 img_pca = pca_dr(formatImage)
 
 
-# view = spy.imshow(data=formatImage, bands=[76, 46, 25], title="img")  # 图像显示
+view1 = spy.imshow(data=formatImage, bands=[76, 46, 25], title="img")  # 图像显示
+view2 = spy.imshow(data=img_pca, bands=[15, 10, 5], title="img_pca")  # 图像显示
 # # spy.view_cube(formatImage, bands=[76, 46, 25])  # 显示后会打印相应功能及操作
 # # unsupervised_demo(formatImage)
 plt.pause(180)
